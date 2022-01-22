@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Horloge au design miminimalist en css et javascript, home web follox your dreams"
+    />
+
+    <!--==================== BOXICONS ====================-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!--==================== CSS ==========-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/img/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./assets/img/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Clock Minimalist</title>
+  </head>
+  <body>
+    <section class="clock container">
+      <div class="clock__container grid">
+        <div class="clock__content grid">
+          <div class="clock__circle">
+            <span class="clock__twelve"></span>
+            <span class="clock__three"></span>
+            <span class="clock__six"></span>
+            <span class="clock__nine"></span>
+
+            <div class="clock__rounder"></div>
+            <div class="clock__hour" id="clock-hour"></div>
+            <div class="clock__minutes" id="clock-minutes"></div>
+            <div class="clock__seconds" id="clock-seconds"></div>
+
+            <!-- Dark/light button -->
+            <div class="clock__theme">
+              <i class="bx bxs-moon" id="theme-button"></i>
+            </div>
+          </div>
+
+          <div>
+            <div class="clock__text">
+              <div class="clock__text-hour" id="text-hour"></div>
+              <div class="clock__text-minutes" id="text-minutes"></div>
+              <div class="clock__text-ampm" id="text-ampm"></div>
+            </div>
+
+            <div class="clock__date">
+              <span id="date-day-week"></span>
+              <span id="date-day"></span>
+              <span id="date-month"></span>
+              <span id="date-year"></span>
+            </div>
+          </div>
+        </div>
+
+        <a
+          href="https://www.homemade-web.com/"
+          target="_blank"
+          class="clock__logo"
+          >Oliive33-Home Web-What time is it please?.Follow your dreams</a
+        >
+      </div>
+    </section>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
